@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-// import { Row, Col, Nav, Navbar, NavItem, NavDropdown, MenuItem, Carousel,
-// Image } from 'react-bootstrap'; import { LinkContainer } from
-// 'react-router-bootstrap';
+import { Row, Col, Nav, Navbar, NavItem, NavDropdown, MenuItem, Carousel, Image } from 'react-bootstrap'; 
+import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
 function Header(props) {
         return (
@@ -80,30 +79,36 @@ function Header(props) {
                             </div>
                         </div>
                         {/* Sidebar Menu */}
-                        <ul className="sidebar-menu" data-widget="tree">
-                            <li className="header">MAIN MENU</li>
+                        <Nav className="sidebar-menu" data-widget="tree">
+                            <NavItem className="header">MAIN MENU</NavItem>
                             {/* Optionally, you can add icons to the links */}
-                            <li>
-                                <a href="/slidebanner"><i className="fa fa-image"/>
-                                    <span>Slide Banner</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/paket"><i className="fa fa-paper-plane"/>
-                                    <span>Paket</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/gallery"><i className="fa fa-image"/>
-                                    <span>Gallery</span>
-                                </a>
-                            </li >
-                            <li>
-                                <a href="/changepassword"><i className="fa fa-key"/>
-                                    <span>Change Password</span>
-                                </a>
-                            </li >
-                        </ul>
+
+                            <IndexLinkContainer to="/">
+                                <NavItem>
+                                    <i className="fa fa-dashboard"/><span>Dashboard</span>    
+                                </NavItem>
+                            </IndexLinkContainer>
+                            <LinkContainer to="/slidebanner">
+                                <NavItem>
+                                    <i className="fa fa-image"/><span>Slide Banner</span>
+                                </NavItem>
+                            </LinkContainer>
+                            <LinkContainer to="/paket">
+                                <NavItem>
+                                    <i className="fa fa-paper-plane"/><span>Paket</span>
+                                </NavItem>
+                            </LinkContainer>
+                            <LinkContainer to="/gallery">
+                                <NavItem>
+                                    <i className="fa fa-image"/><span>Gallery</span>
+                                </NavItem>
+                            </LinkContainer>
+                            <LinkContainer to="/changepassword">
+                                <NavItem>
+                                    <i className="fa fa-key"/><span>Change Password</span>
+                                </NavItem>
+                            </LinkContainer>
+                        </Nav>
                         {/* /.sidebar-menu */}
                     </section>
                     {/* /.sidebar */}
