@@ -99,7 +99,7 @@ function Header(props) {
                                 </a>
                             </li >
                             <li>
-                                <a href="/user/changepassword"><i className="fa fa-key"/>
+                                <a href="/changepassword"><i className="fa fa-key"/>
                                     <span>Change Password</span>
                                 </a>
                             </li >
