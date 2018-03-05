@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Row, Col, Nav, Navbar, NavItem, NavDropdown, MenuItem, Carousel, Image } from 'react-bootstrap'; 
+import { Nav, NavItem } from 'react-bootstrap'; 
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
 function Header(props) {
@@ -80,7 +80,7 @@ function Header(props) {
                         </div>
                         {/* Sidebar Menu */}
                         <Nav className="sidebar-menu" data-widget="tree">
-                            <NavItem className="header">MAIN MENU</NavItem>
+                            <li className="header">MAIN MENU</li>
                             {/* Optionally, you can add icons to the links */}
 
                             <IndexLinkContainer to="/">
