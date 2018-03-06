@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import Header from '../components/Header';
 import {Breadcrumb, Row, Col } from 'react-bootstrap';
 import {IndexLinkContainer, LinkContainer} from 'react-router-bootstrap';
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import BannerAdd from './BannerAdd';
 
 
 const Banner = (props) => {
     const {
         handleSubmit, handleSearch, message,
     } = props;
+    const sld='/slidebanner';
     return (
         <div>
             <Header>
@@ -60,13 +62,13 @@ const Banner = (props) => {
                                                         <i className="fa fa-search" /> Cari
                                                     </button>
                                                     &nbsp;&nbsp;
-                                                    <a className="btn btn-primary" href="/slidebanner">
+                                                    <Link className="btn btn-primary" to="/slidebanner">
                                                         <i className="fa fa-time" /> Clear Filter
-                                                    </a>
+                                                    </Link>
                                                     &nbsp;&nbsp;
-                                                    <NavLink className="btn btn-primary" to="/slidebanner/add">
+                                                    <Link className="btn btn-primary" to={`${sld}/add`}>
                                                         <i className="fa fa-plus" /> Tambah Banner
-                                                    </NavLink>
+                                                    </Link>
                                                 </div>
                                             </form>
                                         </div>
