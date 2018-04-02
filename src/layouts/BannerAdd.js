@@ -1,13 +1,9 @@
-import React, {Component} from 'react';
-import Header from '../components/Header';
-import {Breadcrumb, Row, Col} from 'react-bootstrap';
-import {IndexLinkContainer, LinkContainer} from 'react-router-bootstrap';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 const BannerAdd = (props) => {
     return (
         <div>
-        <Header>
             <div className="content-wrapper">
             {/* Content Header (Page header) */}
             <section className="content-header">
@@ -80,7 +76,6 @@ const BannerAdd = (props) => {
             </section>
             {/* /.content */}
             </div>
-        </Header>
         </div>
 );
 }

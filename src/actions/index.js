@@ -8,7 +8,7 @@ const testApi = value => ({
 
 export const loadTestApi = endpoint => async (dispatch) => {
     const res = await api.fetchApi(endpoint);
-    console.log(res);
+    // console.log(res);
     if (res.status === 500) {
         return dispatch(testApi({ data: { message: null, database: null } }));
     }

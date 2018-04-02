@@ -8,7 +8,7 @@ const instanceAxios = axios.create({
 });
 
 
-const API_ROOT = 'http://127.0.0.1:3001/api/';
+const API_ROOT = 'http://127.0.0.1:3001/api';
 
 /**
  * @param fetchApi get from server *

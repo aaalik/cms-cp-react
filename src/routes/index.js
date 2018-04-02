@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import app from '../containers/app';
-import Banner from '../layouts/Banner';
-import Gallery from '../layouts/Gallery';
-import Paket from '../layouts/Paket';
-import Password from '../layouts/Password';
-import BannerAdd from '../layouts/BannerAdd';
+import banner from '../containers/banner';
+import gallery from '../containers/gallery';
+import paket from '../containers/paket';
+import password from '../containers/password';
+import bannerAdd from '../containers/bannerAdd';
 
 /**
 * @param exact in order for not being followed with bellow routes
@@ -14,12 +14,14 @@ import BannerAdd from '../layouts/BannerAdd';
 const Routes = () => (
     <Router>
         <div>
-            <Route exact path="/" component={app}/>
-            <Route exact path="/slidebanner" component={Banner}/>
-            <Route path="/gallery" component={Gallery} />
-            <Route path="/paket" component={Paket} />            
-            <Route path="/changepassword" component={Password} />  
-            <Route exact path="/slidebanner/add" component={BannerAdd}/>    
+            <Switch>
+                <Route exact path="/" component={app}/>
+                <Route exact path="/slidebanner" component={banner}/>
+                <Route path="/gallery" component={gallery} />
+                <Route path="/paket" component={paket} />            
+                <Route path="/changepassword" component={password} />  
+                <Route exact path="/slidebanner/add" component={bannerAdd}/>
+            </Switch>
         </div>
     </Router>
 );

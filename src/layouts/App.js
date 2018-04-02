@@ -1,7 +1,5 @@
 import React from 'react';
 import {Col, Panel, Button} from 'react-bootstrap';
-// import { Row, Col, Nav, Navbar, NavItem, NavDropdown, MenuItem, Carousel, Image } from 'react-bootstrap';
-// import { LinkContainer } from 'react-router-bootstrap';
 
 class App extends React.Component {
     render() {
@@ -15,7 +13,7 @@ class App extends React.Component {
                     <section className="content-header" >
                         <h1>Welcome<small>Have a nice day!</small></h1>
                         <ol className="breadcrumb" >
-                            <li> <a href="#"><i className="fa fa-dashboard"/>Home</a></li>
+                            <li> <a href=""><i className="fa fa-dashboard"/>Home</a></li>
                         </ol> 
                     </section> 
                     { /* Main content */ } 

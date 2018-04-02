@@ -1,6 +1,4 @@
 import React from 'react';
-import { Nav, NavItem } from 'react-bootstrap'; 
-import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
 function Footer() {
         return (
@@ -12,7 +10,7 @@ function Footer() {
                     {/* Default to the left */}
                     <strong>
                         Copyright© 2018
-                        <a href="#">MJM Travel</a>.</strong>
+                        <a href="">Anton</a>.</strong>
                     All rights reserved.
                 </footer>
             </div>

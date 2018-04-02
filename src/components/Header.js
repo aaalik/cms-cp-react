@@ -11,16 +11,16 @@ function Header(props) {
                     <a href="/" className="logo">
                         {/* mini logo for sidebar mini 50x50 pixels */}
                         <span className="logo-mini">
-                            <b>MJM</b>
+                            <b>Anton</b>
                         </span>
                         {/* logo for regular state and mobile devices */}
                         <span className="logo-lg">
-                            <b>MJM</b>Travel</span>
+                            <b>Anton</b>Soedjarwo</span>
                     </a>
                     {/* Header Navbar */}
-                    <nav className="navbar navbar-static-top" role="navigation">
+                    <nav className="navbar navbar-static-top">
                         {/* Sidebar toggle button*/}
-                        <a href="#" className="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <a href="" className="sidebar-toggle" data-toggle="push-menu" role="button">
                             <span className="sr-only">Toggle navigation</span>
                         </a>
                         {/* Navbar Right Menu */}
@@ -29,12 +29,9 @@ function Header(props) {
                                 {/* User Account Menu */}
                                 <li className="dropdown user user-menu">
                                     {/* Menu Toggle Button */}
-                                    <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                                    <a href="" className="dropdown-toggle" data-toggle="dropdown">
                                         {/* The user image in the navbar*/}
-                                        <img
-                                            src="/assets/img/user2-160x160.jpg"
-                                            className="user-image"
-                                            alt="User Image"/> {/* hidden-xs hides the username on small devices so only the image appears. */}
+                                        <img src="/assets/img/user2-160x160.jpg" className="user-image" alt=""/> {/* hidden-xs hides the username on small devices so only the image appears. */}
                                         <span className="hidden-xs">Alik</span>
                                     </a>
                                     <ul className="dropdown-menu">
@@ -42,8 +39,7 @@ function Header(props) {
                                         <li className="user-header">
                                             <img
                                                 src="/assets/img/user2-160x160.jpg"
-                                                className="img-circle"
-                                                alt="User Image"/>
+                                                className="img-circle" alt=""/>
                                             <p>Alik<small>Member since Jan. 2018</small>
                                             </p>
                                         </li>
@@ -68,13 +64,12 @@ function Header(props) {
                             <div className="pull-left image">
                                 <img
                                     src="/assets/img/user2-160x160.jpg"
-                                    className="img-circle"
-                                    alt="User Image"/>
+                                    className="img-circle" alt=""/>
                             </div>
                             <div className="pull-left info">
                                 <p>Alik</p>
                                 {/* Status */}
-                                <a href="#"><i className="fa fa-circle text-success"/>
+                                <a href=""><i className="fa fa-circle text-success"/>
                                     Online</a>
                             </div>
                         </div>
