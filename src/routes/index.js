@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import App from '../layouts/App';
+import app from '../containers/app';
 import Banner from '../layouts/Banner';
 import Gallery from '../layouts/Gallery';
 import Paket from '../layouts/Paket';
@@ -14,7 +14,7 @@ import BannerAdd from '../layouts/BannerAdd';
 const Routes = () => (
     <Router>
         <div>
-            <Route exact path="/" component={App}/>
+            <Route exact path="/" component={app}/>
             <Route exact path="/slidebanner" component={Banner}/>
             <Route path="/gallery" component={Gallery} />
             <Route path="/paket" component={Paket} />            

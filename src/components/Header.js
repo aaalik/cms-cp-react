@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Nav, NavItem } from 'react-bootstrap'; 
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
 function Header(props) {
         return (
-            <div className="wrapper">
+            <div >
                 {/* Main Header */}
                 <header className="main-header">
                     {/* Logo */}
@@ -80,7 +80,7 @@ function Header(props) {
                         </div>
                         {/* Sidebar Menu */}
                         <Nav className="sidebar-menu" data-widget="tree">
-                            <li className="header">MAIN MENU</li>
+                            <NavItem className="header">MAIN MENU</NavItem>
                             {/* Optionally, you can add icons to the links */}
 
                             <IndexLinkContainer to="/">
@@ -114,18 +114,7 @@ function Header(props) {
                     {/* /.sidebar */}
                 </aside >
 
-                {props.children}
-
-                {/* Main Footer */}
-                <footer className="main-footer">
-                    {/* To the right */}
-                    <div className="pull-right hidden-xs">Anything you want</div>
-                    {/* Default to the left */}
-                    <strong>
-                        Copyright© 2018
-                        <a href="#">MJM Travel</a>.</strong>
-                    All rights reserved.
-                </footer>
+                
             </div>
         );
  
